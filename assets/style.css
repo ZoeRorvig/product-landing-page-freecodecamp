@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Sevillana&display=swap");
+
+:root {
+  --color-headertext: black;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-lightred);
+  background-image: linear-gradient(
+      170deg,
+      rgba(60, 149, 30, 0.75),
+      rgba(9, 149, 20, 0.2)
+    ),
+    url(https://thumbs.dreamstime.com/b/ferns-24928685.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Sevillana", cursive;
+}
+
+p1{
+  font-size: 1.2rem;
+}
+
+#nav-bar {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 1px 3px #999;
+  font-family: "Sevillana", cursive;
+}
+
+#nav-bar ul li {
+  display: inline-block;
+  width: 200px;
+  list-style: none;
+  vertical-align: middle;
+  padding-left: 75px;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: var(--color-headertext);
+  font-family: "Sevillana", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  min-height: 75px;
+  padding: 0px 35px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+#header-img {
+  display: block;
+  width: 120px;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+  font-family: "Sevillana", cursive;
+  font-size: 60px;
+}
+
+/*About Us*/
+#About-Us .me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  width: 20vw;
+}
+
+#About-Us .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 0px 50px;
+}
+
+/*Events*/
+#Event .video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Events .events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  width: 80vw;
+  padding: 0px 50px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/*Shop*/
+h3{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+   margin-top: 100px;
+  font-family: "Sevillana", cursive;
+  font-size: 60px;
+}
+
+/*Contact Us*/
+#Contact-Us {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Sevillana", cursive;
+}
+
+h4{
+  font-size: 50px;
+}
+
+p2{
+  font-size:20px;
+  margin: 5px 0px;
+}
+
+p3{
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+
+#Contact-Us #email {
+  max-width: 300px;
+  width: 100%;
+  padding: 5px;
+}
+
+#Contact-Us #submit {
+  max-width: 100px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  background-color: #f1c40f;
+}
